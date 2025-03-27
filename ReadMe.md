@@ -2,6 +2,8 @@
 
 Welcome to **SQL Ground**, a beautifully crafted, AI-assisted and manually fine-tuned lab for executing SQL queries across multiple database engines.
 
+![ScreenShot](https://i.imgur.com/fju0lFy.png)
+
 This project was designed with **pentesters**, **developers**, **researchers**, and **curious learners** in mind — giving you a unified interface to interact with real-world DBMSes in a safe, self-contained environment.
 
 ---
