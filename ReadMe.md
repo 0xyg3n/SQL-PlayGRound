@@ -4,7 +4,7 @@ Welcome to **SQL Ground**, a beautifully crafted, AI-assisted and manually fine-
 
 ![ScreenShot](https://i.imgur.com/fju0lFy.png)
 
-This project was designed with **pentesters**, **developers**, **researchers**, and **curious learners** in mind — giving you a unified interface to interact with real-world DBMSes in a safe, self-contained environment.
+This project was designed for **pentesters**, **developers**, **researchers**, and **curious learners** in mind — giving you a unified interface to interact with real-world DBMSes in a safe, self-contained environment.
 
 ---
 
@@ -35,7 +35,7 @@ Everything runs in isolated containers — clean, reliable, and easy to reset.
 
 ---
 
-## 🎯 Who Is This For?
+## 🎯 This project can help:
 
 - 🔐 **Pentesters** — safely practice SQL injection, query fuzzing, and exploit simulations.
 - 👨‍💻 **Developers** — test SQL queries across different DBMSes without setting up anything manually.
@@ -46,7 +46,6 @@ Everything runs in isolated containers — clean, reliable, and easy to reset.
 
 ## 🧠 Why This is Awesome
 
-- Built with **AI-driven suggestions** and **manual tuning** to match real-world workflows
 - Helps you **understand SQL behavior differences** between databases
 - Encourages **secure coding** by seeing how queries behave in real engines
 - **Fully extensible**: add new queries, DBMSes, users, or even vulnerable tables
