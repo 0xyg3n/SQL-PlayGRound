@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SQL Playground - Coded by IoZac</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f8f9fa;
+        margin: 40px;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        color: #444;
+      }
+      select, textarea, button {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      #container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      }
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: monospace;
+        resize: vertical;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      pre {
+        background: #eee;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      #footer {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 0.9em;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>🧪 SQL Playground 🎯</h1>
+
+      <label for="dbms">Select DBMS:</label><br />
+      <select id="dbms">
+        <option>MySQL</option>
+        <option>MSSQL</option>
+        <option>ORACLE</option>
+        <option>POSTGRESQL</option>
+        <option>SQLite</option>
+      </select>
+
+      <br /><br />
+
+      <label for="sqlQuery">Enter SQL query:</label><br />
+      <textarea id="sqlQuery" rows="6">SELECT @@version;</textarea><br />
+
+      <button onclick="execute()">Execute</button>
+
+      <h3>Result:</h3>
+      <pre id="result">(results will appear here)</pre>
+    </div>
+
+    <div id="footer">⚡coded w/ love iozac</div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

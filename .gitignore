@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# SQLite database file
+*.db
+
+# Backup or release archives
+*.tar.gz
+*.zip
+
+# Environment files (just in case)
+.env
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

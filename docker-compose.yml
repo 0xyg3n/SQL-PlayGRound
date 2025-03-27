@@ -1,0 +1,46 @@
+version: "3.8"
+services:
+  mysql:
+    image: mariadb:11
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: sql_injection_lab
+    volumes:
+      - ./db-init/mysql_init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports: ["3307:3306"]
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "YourStrong!Passw0rd"
+    volumes:
+      - ./db-init/mssql_init.sql:/tmp/init.sql
+    entrypoint: ["/bin/bash","-c","/opt/mssql/bin/sqlservr & sleep 20; /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'YourStrong!Passw0rd' -i /tmp/init.sql; wait"]
+    ports: ["1434:1433"]
+
+  oracle:
+    image: gvenzl/oracle-free:23-slim-faststart
+    environment:
+      ORACLE_PASSWORD: oracle
+    volumes:
+      - ./db-init/oracle_init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports: ["1522:1521"]
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: sql_injection_lab
+    volumes:
+      - ./db-init/postgres_init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports: ["5433:5432"]
+
+  web:
+    build: ./flask
+    ports: ["5000:5000"]
+    depends_on:
+      - mysql
+      - mssql
+      - oracle
+      - postgres
