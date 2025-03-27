@@ -35,7 +35,7 @@ Everything runs in isolated containers — clean, reliable, and easy to reset.
 
 ---
 
-## 🎯 This project can help:
+## 🎯 This project may help
 
 - 🔐 **Pentesters** — safely practice SQL injection, query fuzzing, and exploit simulations.
 - 👨‍💻 **Developers** — test SQL queries across different DBMSes without setting up anything manually.
@@ -56,20 +56,23 @@ Everything runs in isolated containers — clean, reliable, and easy to reset.
 
 - **Python 3.11** + **Flask** backend
 - **Docker Compose** to manage all services
-- **SQLite, MySQL, PostgreSQL, MSSQL, Oracle** containers
-- Custom **Bash manager script** to build, rebuild, reset, or run in lightweight mode
+- **Supported DBMS: ** **SQLite, MySQL, PostgreSQL, MSSQL, Oracle** 
+- Custom Bash **SQL_GRound-Manager.sh** to build, rebuild and reset with ease
 - Frontend: HTML + CSS + JS (vanilla, no framework)
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ SQL_GRound-Manager.sh Commands
 
 ```bash
-# Start all containers
+# Starts All Containers.
 sudo bash SQL_Ground-Manager.sh start
 
-# Or clean and rebuild everything
+# Stops All Containers. 
+sudo bash SQL_Ground-Manager.sh stop
+
+# Clean Install Everything UI+DBMBS Instances
 sudo bash SQL_Ground-Manager.sh clean
 
-# Or just rebuild the web service (e.g. after code changes)
+# Rebuilds The Web Service Flask.
 sudo bash SQL_Ground-Manager.sh rebuild
