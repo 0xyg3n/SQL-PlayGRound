@@ -1,10 +1,10 @@
-# 🧪 SQL Ground – Multi-DBMS Query Playground for Pentesters & Developers
+# 🧪 SQL PlayGRound – Multi-DBMS Query Playground for Pentesters & Developers
 
-Welcome to **SQL Ground**, a beautifully crafted, AI-assisted and manually fine-tuned lab for executing SQL queries across multiple database engines.
+Welcome to **SQL PlayGRound**, a beautifully crafted, AI-assisted and manually fine-tuned lab for executing SQL queries across multiple database engines.
 
 ![ScreenShot](https://i.imgur.com/fju0lFy.png)
 
-This project was designed for **pentesters**, **developers**, **researchers**, and **curious learners** in mind — giving you a unified interface to interact with real-world DBMSes in a safe, self-contained environment.
+This project was designed for **pentesters**, **developers**, **researchers**, and **curious learners** in mind — giving you a unified interface to interact with real-world DBMS in a safe, self-contained environment.
 
 ---
 
@@ -62,17 +62,17 @@ Everything runs in isolated containers — clean, reliable, and easy to reset.
 
 ---
 
-## ⚙️ SQL_GRound-Manager.sh Commands
+## ⚙️ SQL_PlayGRound-Manager.sh Commands
 
 ```bash
 # Starts All Containers.
-sudo bash SQL_Ground-Manager.sh start
+sudo bash SQL_PlayGRound-Manager.sh start
 
 # Stops All Containers. 
-sudo bash SQL_Ground-Manager.sh stop
+sudo bash SQL_PlayGRound-Manager.sh stop
 
 # Clean Install Everything UI+DBMBS Instances
-sudo bash SQL_Ground-Manager.sh clean
+sudo bash SQL_PlayGRound-Manager.sh clean
 
 # Rebuilds The Web Service Flask.
-sudo bash SQL_Ground-Manager.sh rebuild
+sudo bash SQL_PlayGRound-Manager.sh rebuild
